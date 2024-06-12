@@ -1,0 +1,103 @@
+@import url(reset.css);
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* THEME COLORS*/
+:root{
+    --primarycolor: white;
+    --hovercolor:rgb(133, 133, 133);
+    /* These are prolly the only colors ill add here dont judge me (T-T) I just like root  */
+}
+body{
+    color: var(--primarycolor);
+}
+/* BACKGROUND */
+body{
+    background: url(../images/pngtree-tropical-dark-green-leaf-texture-a-full-frame-view-of-lush-image_13601650.png);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+/* CENTER OF BLUR BLOCK */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* FLOATING BLURRY BLOCK */
+.container{
+    width: 90vw;
+    height: 90vh;
+    border-radius: 1rem;
+    backdrop-filter: blur(50px);
+    padding: 2rem 5rem;
+}
+/* NAV BAR */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* LINKS*/
+nav a{
+    color: var(--primarycolor);
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.links{
+    display: flex;
+    gap: 6rem;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+/* LINKS HOVER */
+nav a:hover{
+    color: var(--hovercolor);
+}
+/* BOLD TEXT */
+.bold{
+    margin-top: 5rem;
+    line-height: 4rem;
+    font-size:3.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.small{
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+/* FLEX */
+main{
+    display: flex;
+    justify-content: space-between;
+}
+/*  IMAGE */
+main img{
+    margin-right: -17rem;
+    width: 45rem;
+    margin-top: -2rem;
+}
+/* BUTTON */
+button{
+    font-family: Poppins;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+/* BUTTON HOVER */
+button:hover{
+    background: var(--hovercolor);
+    color: var(--primarycolor);
+}
+/* FOOTER */
+footer P{
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
